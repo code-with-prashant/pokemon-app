@@ -1,0 +1,48 @@
+h1 {
+  color: darkgrey;
+  font-size: 300%;
+  text-transform: uppercase;
+  text-align:center ;
+}
+body {
+  background-color: black;
+  margin: 0;
+  font-family: Ruge Boogie;
+}
+.card {
+  padding: 20px;
+  background-color: gray;
+  color: saddlebrown;
+}
+#poke {
+  padding-inline-start: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 30px;
+}
+.card-title{
+  text-transform:uppercase;
+  font-size: 40px;
+  font-weight: normal;
+}
+.card-subtitle{
+  font-weight: bolder;
+  font-size: larger;
+  color:black;
+  margin-top: auto;
+}
+.card-image{
+  height: 180px;
+}
+.container{
+  padding:40px;
+
+}
+.card:hover{
+  animation: bounce 0.5s linear;
+}
+@keyframes bounce{
+  20%{
+    transform: translatey(-8px);
+  }
+}
